@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="app-container">
+            <header id="app-header" class="app-header">
+                <h1>Jimmy's Diner</h1>
+                <h2>The best pizzas and burgers in town</h2>
+            </header>
+            
+
+            <div id="menu" class="menu">
+                <!-- MENU ITEMS RENDER HERE -->
+            </div>
+            
+
+
+            <div class="checkout hidden" id="checkout">
+                <h2 class="order-title">Your Order</h2>
+                <div id="order" class="order">
+                    <!-- ORDERED ITEMS RENDER HERE -->
+                </div>
+
+                <div class="order-total" id="order-total">
+                    <h2 class="order-item">Total price:</h2>
+                    <p class="food-price" id="total-price">
+                        <!--TOTAL ORDER PRICE RENDERS HERE-->
+                    </p>
+                </div>
+
+                <div class="order-btn-container">
+                    <button class="green-btn" id="order-btn">Complete Order</button>
+                </div>
+            </div>
+
+                
+            <div id="payment-form-container" class="payment-form-container hidden">
+                <!-- PAYMENT FORM POPUP HIDDEN UNTIL COMPLETE ORDER BUTTON IS CLICKED -->
+                <h2 class="form-title">Enter card details</h2>
+                <form id="payment-form">
+                    <input 
+                    id="customer-name" 
+                    name="customer-name" 
+                    type="text" 
+                    placeholder="Enter your name" 
+                    required
+                    />
+
+                    <input 
+                    id="card-number" 
+                    name="card-number" 
+                    type="text" 
+                    inputmode="numeric" 
+                    placeholder="Enter your card number" 
+                    title= "XXXX-XXXX-XXXX-XXXX"
+                    pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                    minlength="19" 
+                    maxlength="19" 
+                    required 
+                    />
+
+                    <input 
+                    id="cvv" 
+                    name="cvv" 
+                    type="text" 
+                    inputmode="numeric" 
+                    placeholder="Enter CVV" 
+                    minlength="3" 
+                    maxlength="3" 
+                    required 
+                    />
+
+                    <button class="green-btn" id="pay-btn" type="submit">Pay</button>
+                </form>
+            </div>
+        </div>
+        
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

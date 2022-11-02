@@ -1,0 +1,192 @@
+/* FIGMA DESIGN FILE: https://www.figma.com/file/b5rh4yfRkdjUoLhfbWh0MB/Mobile-Restaurant-Menu-(Copy) */
+
+
+html{
+    background: #F5F5F5;
+}
+
+body {
+    width: 600px;
+    height: 1161px;
+    margin: 0 auto;
+    font-family: 'Smythe', cursive;
+} 
+
+.app-container {
+    width: 100%;
+}
+
+.app-header {
+    height: 167px;
+    color: white;
+    background: url("images/header.png");
+    background-size: cover;
+    padding-left: 45px;
+}
+
+
+/* TYPOGRAPHY */
+h3 {
+    font-size: 28px;
+    margin: 0 0 8.8px 0 ;
+}
+
+small {
+    color: #8B8B8B;
+    font-size: 16px;
+}
+
+p { 
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.order-title, .form-title {
+    text-align: center;
+}
+
+
+/* MENU SECTION */
+.food {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #D2D2D2;
+    padding: 50px 0;
+}
+
+.food-pic {
+    font-size: 80px /*font size used as image is an imoji within a span*/
+}
+
+.food-details {
+    margin: 0 205px 0 31px;
+    width: 152px;
+}
+
+.food-price {
+    font-weight: bold;
+}
+
+.add-btn {
+    cursor: pointer;
+    background: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #D2D2D2;
+    padding: none;
+}
+
+
+
+/* ORDER SECTION */
+.order {
+    border-bottom: 2px solid black;
+}
+.order-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-name {
+    display: flex;
+    align-items: baseline;
+}
+
+
+/* ORDER TOTAL PRICE SECTION */
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.remove {
+    cursor: pointer;
+    font-size: small;
+    display: inline;
+    border:none;
+    background: none;
+    font-weight: 400;
+    color: #BBBBBB;
+}
+
+
+/* COMPLETE ORDER AND PAY BUTTONS */
+.green-btn {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    width: 100%;
+    height: 60px;
+    background: #16DB99;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* PAYMENT FORM POPUP*/
+
+.payment-form-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 525px;
+    height: 540px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 1px 1px 100px 5px darkgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+input{
+    width: 450px;
+    height: 70px;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    margin: 10px 20px 10px 20px;
+    padding: 5px 0px 5px 25px;
+    font-size: 20px;
+    color: #757575;
+}
+
+#pay-btn {
+    width: 450px;
+    height: 70px;
+}
+
+
+/* FOR ORDER SECTION AND PAYMENT POPUP HIDDEN AS DEFAULT */
+.hidden {
+    display: none;
+}
+
+
+/* THANK YOU MESSAGE */
+
+.thank-you-message{
+    width: 100%;
+    font-weight: 400;
+    font-size: 32px;
+    background: #ECFDF5;
+    color: #065F46;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-radius: 3px;
+    text-align: center;
+
+}
+
+.new-order-btn-container{
+    padding-top: 25px;
+}
